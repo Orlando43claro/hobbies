@@ -1,0 +1,112 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Azul oscuro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del juego */
+.juego-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilos del temporizador */
+.temporizador {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#temporizadorCanvas {
+    width: 100px;
+    height: 100px;
+}
+
+#segundos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo para la visualización de puntos */
+.puntos {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos span {
+    margin-right: 10px;
+}
+
+/* Estilo para la pregunta */
+.pregunta-container {
+    margin-top: 20px;
+    background-color: #333;
+    border: 2px solid #2ecc71; /* Borde LED verde */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.pregunta {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las respuestas */
+.respuestas button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #2ecc71; /* Borde LED verde */
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.respuestas button:hover {
+    background-color: #2ecc71;
+}
+
+/* Estilos para las opciones */
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.opciones button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: 2px solid #2ecc71;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.opciones button:hover {
+    background-color: #2ecc71;
+}
